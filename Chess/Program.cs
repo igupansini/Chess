@@ -8,8 +8,8 @@ namespace Chess
         static void Main(string[] args)
         {
             Console.WriteLine("Jogo de Xadrez");
-            Posicao p1 = new Posicao(3, 5);
-            Console.WriteLine(p1);
+            Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+
         }
     }
 }
