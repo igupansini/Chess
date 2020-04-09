@@ -14,5 +14,10 @@
             this.tabuleiro = tabuleiro;
             this.quantidadeMovimentos = 0;
         }
+
+        public void incrementarMovimento()
+        {
+            quantidadeMovimentos++;
+        }
     }
 }

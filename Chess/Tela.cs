@@ -9,22 +9,22 @@ namespace Chess
         {
             for (int i = 0; i < tabuleiro.linhas; i++)
             {
-                Console.Write(8 - i + " ");
+                Console.Write(8 - i + "  ");
                 for (int j = 0; j < tabuleiro.colunas; j++)
                 {
                     if (tabuleiro.peca(i, j) == null)
                     {
-                        Console.Write("- ");
+                        Console.Write("-  ");
                     }
                     else
                     {
                         Tela.imprimirPeca(tabuleiro.peca(i, j));
-                        Console.Write(" ");
+                        Console.Write("  ");
                     }
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("  A B C D E F G H");
+            Console.WriteLine("\n   a  b  c  d  e  f  g  h");
         }
 
         public static void imprimirPeca(Peca peca)
