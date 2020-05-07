@@ -72,6 +72,8 @@ namespace xadrez
                 }
                 pos.coluna = pos.coluna - 1;
             }
+
+            return mat;
         }
     }
 }
