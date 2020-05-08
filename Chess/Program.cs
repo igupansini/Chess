@@ -15,8 +15,10 @@ namespace Chess
                 while (!partida.terminada)
                 {
                     Console.Clear();
-                    Console.WriteLine("\t CHESS\n");
                     Tela.imprimirTabuleiro(partida.tab);
+                    Console.WriteLine();
+                    Console.WriteLine("Turno: " + partida.turno);
+                    Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
                     
                     Console.WriteLine("\nORIGEM: ");
                     Posicao origem = Tela.lerPosicao().toPosicao();
@@ -27,7 +29,7 @@ namespace Chess
                     Console.WriteLine("\nDESTINO: ");
                     Posicao destino = Tela.lerPosicao().toPosicao();
 
-                    partida.executaMovimento(origem, destino);
+                    partida.realizaJogada(origem, destino);
                 }
             }
             catch(TabuleiroException e)
