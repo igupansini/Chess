@@ -31,6 +31,7 @@ namespace Chess
                         Console.WriteLine();
                         Console.WriteLine("\nDESTINO: ");
                         Posicao destino = Tela.lerPosicao().toPosicao();
+                        partida.validarPosicaoDestino(origem, destino);
 
                         partida.realizaJogada(origem, destino);
                     }
